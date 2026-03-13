@@ -1,0 +1,22 @@
+Valori Config per ricreare una simulazione "Media":
+
+Budget = 20000.0 		    # Budget Modesto per iniziare
+
+Meteo = 0.7 			    # Meteo un po' più caotico
+
+Tasso_Interesse_Passivo = 0.20 	    # 20% di interessi sui prestiti
+
+Probabilita_Evento = 0.04 	    # 4% di Probabilità Giornaliera per eventi globali (guerre, boom export)
+
+Affitto_e_Tasse_Giornaliero = 150.0  # Costi fissi giornalieri quasi raddoppiati
+
+Seed:
+1. 779685 Successo da 125.000€, nonostante ripetute siccità e due guerre, l'ottima semina del grano ha garantito la stabilità.
+
+2. 545089 Fallimento da -26.000€, la pressione combinata di 5 pandemie e 5 guerre ha eroso la liquidità aziendale.
+
+3. 23534 Andamento brillante da 212.000€, la combinazione tra raccolti e due consecutivi Boom dell'Export ha generato ottimi profitti.
+
+4. 888231 Fallimento -47.000€, l'interesse passivo accumulato durante le crisi ha vanificato un raccolto di grano eccezionale da 608.000 kg.
+
+5. 679946 Bancarotta al giorno 216, i costi fissi insostenibili hanno costretto l'azienda alla chiusura prima di poter iniziare la vendemmia.

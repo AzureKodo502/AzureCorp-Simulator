@@ -1,0 +1,23 @@
+Valori Config per ricreare una simulazione "Soft":
+
+Budget = 50000.0 		    # Alto Budget Iniziale (Difficile andare in Rosso)
+
+Meteo = 0.3 			    # Meteo Stabile (Bassa Probabilità di Eventi meteo catastrofici)
+
+Tasso_Interesse_Passivo = 0.05 	    # Solo il 5% di interessi sui prestiti
+
+Probabilita_Evento = 0.02 	    # Solo il 2% di Probabilità Giornaliera per eventi globali (guerre, boom export)
+
+Affitto_e_Tasse_Giornaliero = 80.0  # Costi fissi giornalieri molto bassi
+
+Seed:
+1. 839708 - Chiusura a 120.000€, l'azienda ha resistito a ben tre pandemie grazie a un mercato stabile e un boom dell'export.
+
+2. 764863 - Fallimento Fallimento per oltre -70.000€, il crollo cronico dei di mercato ha reso inutili i tentativi di recupero tramite le esportazioni.
+
+3. 808877 - Grande Successo Anno caotico superato con 127.000€, l'azienda ha toccato un lievissimo debito temporaneo ma ha saputo recuperare.
+
+4. 126091 - Fallimento Disastro totale con bancarotta irreversibile al giorno 326, una combinazione di guerre e pandemie ha azzerato la cassa aziendale.
+
+5. 974350 - Grande Successo Andamento da Record con profitti oltre i 419.000€; il moltiplicatore del mercato è schizzato alle stelle, surclassando i danni delle siccità.
+

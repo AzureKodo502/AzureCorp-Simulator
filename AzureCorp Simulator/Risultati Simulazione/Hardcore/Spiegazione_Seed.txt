@@ -1,0 +1,22 @@
+Valori Config per ricreare una simulazione "Hardcore":
+
+Budget = 10000.0 		    # Budget Iniziale molto basso
+
+Meteo = 1.0 			    # Meteo estremamente Caotico
+
+Tasso_Interesse_Passivo = 0.40 	    # 40% di interessi sui prestiti
+
+Probabilita_Evento = 0.08 	    # 8% di Probabilità Giornaliera per eventi globali (guerre, boom export)
+
+Affitto_e_Tasse_Giornaliero = 250.0  # Costi fissi giornalieri quasi triplicati
+
+Seed:
+1. 414074 Fallimento -100.000€ al giorno 246, una combinazione di ben 6 guerre consecutive ha spazzato via ogni tentativo di ripresa.
+
+2. 95484 Bancarotta sfiorata, -859€ finali, l'azienda è sopravvissuta per 365 giorni ma gli oltre 6.000€ di interessi passivi l'hanno affondata alla fine dell'anno.
+
+3. 369649 L'unico miracolo da +14.000€, ben 6 Boom dell'Export hanno bilanciato la catastrofe climatica e le guerre.
+
+4. 804837 Bancarotta al giorno 125, la totale mancanza di liquidità ha reso impossibile finanziare l'attesa per il raccolto del grano.
+
+5. 37844 Fallimento al giorno 189, nonostante un raccolto di grano andato a buon fine +22.000€.
