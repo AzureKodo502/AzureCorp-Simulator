@@ -129,3 +129,5 @@ Project created for educational purposes, academic thesis, and personal portfoli
 
 ✍️ Author
 Developed by Oleksandr
+
+(UPDATE README SOON)
