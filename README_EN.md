@@ -1,4 +1,4 @@
-# 🌾 Simulatore Stocastico Agricolo – Tesi di Laurea in Informatica
+# 🌾 Agricultural Stochastic Simulator – Computer Science Thesis
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Data_Visualization-orange)
