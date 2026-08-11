@@ -23,7 +23,7 @@ The project's primary objective is the design of a scalable computational engine
 
 | **Financial Trend Analysis (Matplotlib)** | **Impact of Adverse Events (Console/Log)** |
 |:---:|:---:|
-| ![KPI Trends](screenshots/kpi_trends.png) | ![Event Impact](screenshots/event_impact.png) |
+| ![KPI Trends](screenshots/kpi_trends.jpg) | ![Event Impact](screenshots/event_impacts.jpg) |
 
 ---
 
