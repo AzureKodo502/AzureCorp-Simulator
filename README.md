@@ -1,133 +1,145 @@
-# 🌾 Stochastic Agricultural Simulator – B.Sc. Computer Science Thesis
+# 🌾 Simulatore Stocastico Agricolo – Tesi di Laurea in Informatica
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Data_Visualization-orange)
+![NumPy](https://img.shields.io/badge/NumPy-Math-lightblue)
 ![Algorithms](https://img.shields.io/badge/Algorithms-Stochastic_Modeling-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Project Type](https://img.shields.io/badge/Project-Thesis-informational)
 
-> **IT Italian version available here → [Leggi in Italiano](./README_IT.md)**
+> **EN English version available here → [Read in English](./README_EN.md)**
 
-## 🌟 Overview
+## 🌟 Panoramica
 
-This project is a **Python-based stochastic simulator** developed as the final thesis for my Bachelor's Degree in Computer Science.
+Questo progetto è un **simulatore stocastico sviluppato in Python**, realizzato come tesi finale per il conseguimento della Laurea Triennale in Informatica.
 
-The application dynamically models the trend of economic and production KPIs over time in an agricultural context. It calculates daily variations based on real-world financial variables, applying decision-making logic conditioned by fluctuating probabilistic events.
+L'applicazione modella dinamicamente l'andamento di indicatori chiave di prestazione (KPI) economici e produttivi nel tempo all'interno di un contesto agricolo. Il sistema calcola le variazioni giornaliere basandosi su variabili finanziarie reali, applicando logiche decisionali condizionate dalla generazione probabilistica di eventi imprevisti.
 
-The main goal of this project was to design a scalable calculation engine focused on complex algorithmic modeling, probabilistic data generation, and time-trend visualization.
+L'obiettivo principale del progetto è la progettazione di un motore di calcolo scalabile, focalizzato sulla modellazione algoritmica complessa, sulla programmazione orientata agli oggetti (OOP) e sulla visualizzazione avanzata dei dati.
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-| **KPI Trends Analysis** | **Event Impact Visualization** |
+| **Analisi Trend Finanziari (Matplotlib)** | **Impatto Eventi Avversi (Console/Log)** |
 |:---:|:---:|
 | ![KPI Trends](screenshots/kpi_trends.png) | ![Event Impact](screenshots/event_impact.png) |
 
 ---
 
-## 🚀 How to Run
+## Come avviare il progetto
 
-To run this application, you need to execute the main Python script.
+Per eseguire questa applicazione, è sufficiente lanciare il file principale Python.
 
-### Prerequisites
-* **Python 3.11+** installed.
-* **pip** package manager.
+### Prerequisiti
+* **Python 3.11+** installato.
+* Gestore di pacchetti **pip**.
 
-### Step 1: Setup Environment
-Open a terminal in the project folder and run:
+### Step 1: Configurazione dell'Ambiente
+Aprire un terminale nella cartella del progetto ed eseguire:
 ```bash
-# Create a virtual environment (Recommended)
+# Creazione di un virtual environment (Consigliato)
 python -m venv venv
 
-# Activate the virtual environment
-# Windows
+# Attivazione del virtual environment
+# Su Windows:
 venv\Scripts\activate
-# Mac/Linux
+# Su Mac/Linux:
 source venv/bin/activate
-Step 2: Install Dependencies and Run
+Step 2: Installazione delle dipendenze ed esecuzione
 Bash
-# Install required packages
+# Installazione delle librerie necessarie (Matplotlib, NumPy, ecc.)
 pip install -r requirements.txt
 
-# Run the simulator
+# Avvio del simulatore
 python main.py
-⚙️ Core Configuration (Medium Difficulty Default Parameters)
-The calculation engine runs on a strictly parameterized environment. The default fallback values configured for the "Medio" difficulty level are:
+Il motore di calcolo opera in un ambiente rigorosamente parametrizzato tramite il modulo config.py. 
+```
+### Parametri Iniziali (Default difficoltà Media)
 
-Budget: 20000.0
+- Budget Iniziale: 20000.0 €
 
-Meteo (Weather Index): 0.7
+- Indice Meteo (Stabilità): 0.7 (0.0 stabile, 1.0 caotico)
 
-Tasso_Interesse_Passivo (Passive Interest Rate): 0.20
+- Tasso di Interesse Passivo: 0.20 (20%)
 
-Probabilita_Evento (Adverse Event Probability): 0.04
+- Probabilità Evento Avverso: 0.04 (4%)
 
-Affitto_e_Tasse_Giornaliero (Daily Fixed Costs): 150.0
+- Costi Fissi (Affitto e Tasse Giornaliere): 150.0 €
 
-🏗️ Architecture
-The application is structured into modular components to ensure scalability and separation of concerns.
+- Nota: La simulazione supporta l'inserimento di un SEED specifico per garantire la totale riproducibilità degli scenari generati.
 
-Simulation Engine → Core logic for daily variations and stochastic math.
+---  
 
-Configuration Manager → Handles parsing and validation of difficulty parameters.
+### Architettura del Software
+- Il codice applica rigorosamente il principio di separazione delle responsabilità (Separation of Concerns), dividendo la configurazione, la logica di dominio e il motore di esecuzione.
 
-Data Visualizer → Processes complex datasets to export time-trend charts using Matplotlib.
+### config.py (Configuration Manager)
+- Isola tutti i parametri globali, permettendo il bilanciamento del modello senza alterare la logica del codice.
 
-Data Exporter → Generates structured output logs for further analysis.
+### classi.py (Domain Logic & OOP)
+- Implementa l'architettura a oggetti. Utilizza una superclasse UnitaProduttiva da cui ereditano i moduli specifici (CampoGrano, Stalla, Vigneto), sfruttando il polimorfismo per il calcolo dei bilanci giornalieri.
 
-💻 Technologies Used
-Python 3.11
+### main.py (Simulation Engine)
+- Cuore algoritmico del sistema. Gestisce il ciclo temporale, applica distribuzioni statistiche (Gaussiane e Uniformi) per l'andamento del mercato, e orchestra l'esportazione dei dati.
 
-Matplotlib (Data Visualization)
+---
 
-NumPy / Math modules (Stochastic calculations)
+### Tecnologie Utilizzate
 
-Git
+- Linguaggio: Python 3.11
 
-✨ Features
-🎲 Stochastic Engine
-Calculates unpredictable daily variations using advanced randomization logic.
+- Data Visualization: Matplotlib
 
-Applies probability-based adverse events affecting production metrics.
+- Matematica Stocastica: NumPy, modulo random nativo
 
-📊 Automated Data Visualization
-Processes generated datasets dynamically.
+- Gestione Dati: modulo csv nativo per l'esportazione di dataset strutturati
 
-Exports 5+ types of time-trend charts (KPIs, profit margins, event impacts).
+---
 
-💾 Data Management
-Tracks historical data across simulated days.
+### Funzionalità Principali
+- Motore Stocastico e Analisi del Rischio
+Calcolo delle variazioni di mercato tramite algoritmi di randomizzazione avanzati (distribuzioni gaussiane e uniformi).
 
-Exports simulation results in readable formats.
+- Sistema di iniezione di eventi imprevisti a impatto asimmetrico (es. Siccità, Guerra, Pandemia, Boom Export) che alterano dinamicamente i moltiplicatori di prezzo e produzione.
 
-🛣️ Future Improvements (Roadmap)
-GUI Integration: Implement a graphical user interface using PyQt or Tkinter to replace CLI execution.
+- Generazione Dinamica dei Dati e Visualizzazione
 
-Real-Time Data Integration: Connect external weather APIs to replace static probability variables.
+- Monitoraggio in tempo reale del flusso di cassa, del debito e dei profitti settoriali.
 
-Advanced Export: Support for exporting datasets directly to Excel/CSV format.
+- Esportazione automatizzata dei risultati in file .csv (report_dati_AzureCorp.csv) per l'analisi esterna.
 
-🧠 What I Learned
-Through this project I developed practical experience in:
+- Rendering di dashboard grafiche multi-plot tramite Matplotlib (Salute Finanziaria, Scenario di Mercato, Andamento Settoriale).
 
-Designing and implementing stochastic algorithms.
+---
 
-Translating complex business and mathematical rules into scalable Python code.
+### Logica Finanziaria Enterprise
+- Gestione automatizzata di interessi passivi giornalieri in caso di saldo negativo.
 
-Generating dynamic and readable data visualizations programmatically.
+- Sistema di early-exit per bancarotta irreversibile basato su soglie di deficit preimpostate.
 
-Fine-tuning parameters for balanced simulation environments.
+---
 
-Notes
-This project is strictly a Computer Science thesis, focusing on the software engineering, algorithms, and programmatic data modeling behind the simulation, rather than economic theory.
+### Competenze Acquisite
+- Attraverso lo sviluppo di questa tesi ho maturato esperienza pratica in:
 
-Please note that source code comments and variable names are written in Italian, to comply with the original academic requirements.
+- Progettazione e implementazione di algoritmi stocastici e distribuzioni di probabilità.
 
-📄 License
-Project created for educational purposes, academic thesis, and personal portfolio.
+- Architettura software Object-Oriented (OOP) applicata a modelli di simulazione complessi.
 
-✍️ Author
-Developed by Oleksandr
+- Elaborazione, tracciamento ed esportazione di dataset programmatici per la Business Intelligence.
 
-(UPDATED README SOON)
+---
+
+### Note
+- Questo progetto è una Tesi in Informatica. Il focus primario risiede nell'ingegneria del software, nella solidità algoritmica e nella manipolazione dei dati, piuttosto che nelle logiche di microeconomia.
+
+- I commenti al codice sorgente, i nomi delle variabili e l'output della console sono mantenuti in italiano per rispettare i requisiti accademici originali richiesti dalla facoltà.
+
+---
+
+### Licenza
+Progetto realizzato a scopo didattico, tesi accademica e portfolio personale.
+
+### Autore
+Sviluppato da Oleksandr Bevtsyk
