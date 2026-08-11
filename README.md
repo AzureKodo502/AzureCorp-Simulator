@@ -23,7 +23,7 @@ L'obiettivo principale del progetto è la progettazione di un motore di calcolo 
 
 | **Analisi Trend Finanziari (Matplotlib)** | **Impatto Eventi Avversi (Console/Log)** |
 |:---:|:---:|
-| ![KPI Trends](screenshots/kpi_trends.png) | ![Event Impact](screenshots/event_impact.png) |
+| ![KPI Trends](screenshots/kpi_trends.jpg) | ![Event Impact](screenshots/event_impact.jpg) |
 
 ---
 
